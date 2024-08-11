@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-1  {
+  width: 50.3333%;
+}
+
+.w-2 {
+  width: 66.6666%;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem ;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid img {
+  width: 250px; /* Set the fixed width */
+  height: 200px; /* Set the fixed height */
+  object-fit: cover; /* Ensure the image covers the area */
+  border-radius: 1rem;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.border {
+  border: 1px solid #ccc;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-1  {
+  width: 50.3333%;
+}
+
+.w-2 {
+  width: 66.6666%;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid img {
+  width: 100%; 
+  max-width: 250px; 
+  max-height: 200px; 
+  object-fit: cover; 
+  border-radius: 1rem;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.border {
+  border: 1px solid #ccc;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-blue-300 {
+  background-color: #90cdf4;
+}
+
+/* Customer list container */
+.customer-list {
+  width: 30%; 
+  max-width: 400px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 1rem; 
+  display: block;
+  margin: 0 auto; 
+}
+
+/* Heading styles */
+.customer-list h2 {
+  font-size: 1.125rem; 
+  font-weight: 600;
+  margin-bottom: 1rem; 
+}
+
+/* Customer card styles */
+.customer-card {
+  margin-bottom: 1rem; 
+  padding: 1rem;
+  background-color: #f9f9f9; 
+  border: 1px solid #e2e8f0; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  cursor: pointer; 
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .grid img {
+    max-width: 200px;
+    max-height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .grid img {
+    max-width: 180px;
+    max-height: 140px;
+  }
+  .customer-list {
+    width: 30%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .grid img {
+    max-width: 100%;
+    max-height: auto;
+  }
+  .customer-list {
+    width: 100%;
+  }
+}
+
+.customer-detail-container {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-blue-300 {
+  background-color: #90cdf4;
+}
+
+/* Customer list container */
+.customer-list {
+  width: 30%; 
+  max-width: 400px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 1rem; 
+  display: block;
+  margin: 0 auto; 
+}
+
+/* Heading styles */
+.customer-list h2 {
+  font-size: 1.125rem; 
+  font-weight: 600;
+  margin-bottom: 1rem; 
+}
+
+/* Customer card styles */
+.customer-card {
+  margin-bottom:1rem; 
+  padding: 1rem;
+  background-color: #f9f9f9; 
+  border: 1px solid #e2e8f0; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  cursor: pointer; 
+}
+.customer-card {
+  margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+
+.customer-detail-container {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
